@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Slab:wght@200;400;600;900&display=swap" rel="stylesheet"/>
+
+    <style>
+        body {
+            background-image: url(images/Latar2.jpg);
+            font-family: "Baloo Tamma 2", cursive;
+        }
+        section {
+            min-height: 420px;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .navbar{
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0.2rem;
+        background: rgb(0,0,0,0.6) !important;
+        }
+
+        .nav-link {
+            border: 2px solid transparent;
+        }
+        .nav-link:hover {
+            text-decoration: none;
+            border-bottom: 2px solid #f3b509;
+            transition: 0.5s ease;
+        }
+
+        .main_row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card {
+            border-bottom: 8px solid #2491eb;
+        }
+        #Contact{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            min-height: 100vh;
+            background: url(background.jpg) no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contact-section{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contact-info{
+            color:black;
+            max-width: 500px;
+            line-height: 65px;
+            padding-left: 50px;
+            font-size: 18px;
+        }
+        .contact-info i{
+            margin-right: 20px;
+            font-size: 25px;
+        }
+        .contact-form{
+            max-width: 700px;
+            margin-right: 50px;
+        }
+        .contact-info, .contact-form{
+            flex: 1;
+        }
+        .contact-form h2{
+            color: rgb(15, 15, 15);
+            text-align: center;
+            font-size: 35px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+        .contact-form .text-box{
+            background: rgb(24, 23, 23);
+            color: #fff;
+            border: none;
+            width: calc(50% - 10px);
+            height: 50px;
+            padding: 12px;
+            font-size: 15px;
+            border-radius: 5px;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+        .contact-form .text-box:first-child{
+            margin-right: 15px;
+        }
+        .contact-form textarea{
+            background:  rgb(24, 23, 23);
+            color: #fff;
+            border: none;
+            width: 100%;
+            padding: 12px;
+            font-size: 15px;
+            min-height: 200px;
+            max-height: 400px;
+            resize: vertical;
+            border-radius: 5px;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+        .contact-form .send-btn{
+            float: right;
+            background: #2E94E3;
+            color: #fff;
+            border: none;
+            width: 120px;
+            height: 40px;
+            font-size: 15px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            transition-property: background;
+        }
+        .contact-form .send-btn:hover{
+            background: #0582E3;
+        }
+        @media screen and (max-width: 950px){
+        .contact-section{
+            flex-direction: column;
+        }
+        .contact-info, .contact-form{
+            margin: 30px 50px;
+        }
+        .contact-form h2{
+            font-size: 30px;
+        }
+        .contact-form .text-box{
+            width: 100%;
+        }
+        }
+        .card-text{
+            color: darkcyan;
+            font-weight: 400;
+        }
+        .card-body{
+            background-color:lightgoldenrodyellow;
+        }
+    </style>
+    <title>My Portofolio</title>
+  </head>
+  <body class="mt-5">
+    <!------------------------------------------------------- Section Home dimulai ------------------------------------------------------------->
+    <section id="Home">
+        <!--------------------------------------------------- Navigation Bar dimulai ---------------------------------------------------------->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">RV</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#Home">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#About">ABOUT</a>
+                    </li>
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#Portofolio">PORTOFOLIO</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#Achievment">ACHIEVMENT</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#Contact">CONTACT</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <!--------------------------------------------------- Navigation Bar selesai ---------------------------------------------------------->
+
+        <!------------------------------------------------------ Jumbotron dimulai ------------------------------------------------------------>
+        <div class="main-container container mt-5">
+            <div class="row main_row text">
+              <div class="col-5">
+                <h3 class="text-black">Hello, I'm</h3>
+                <h1 class="text-black m-heading">Rivaldy Valentino</h1>
+                <h5 class="text-black">THIS IS MY PORTOFOLIO</h5>
+              </div>
+              <div class="col-7">
+                <img src="images/H2.png" width= "auto" class="img-fluid"/>
+              </div>
+            </div>
+          </div>
+        <!------------------------------------------------------ Jumbotron Selesai ------------------------------------------------------------>
+    </section>
+    <!------------------------------------------------------- Section Home Selesai ------------------------------------------------------------->
+
+    <!------------------------------------------------------- Section About dimulai ------------------------------------------------------------->
+    <section id="About">
+        <div class="container pt-5 pb-5 mb-5">
+            <div class="row mb-4">
+                <div class="col text-center">
+                    <h2 class="pt-4">About Me</h2>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <img src="images/B1.jpeg" class="img-fluid rounded-circle img-thumbnail" width="auto">
+                </div>
+
+                <div class="col-md-5 text-left" style="font-weight: 500;">
+                    <p>I was born in Jakarta on February 15, 2001. I am the third of 3 children. 
+                       Currently, I am studying at Bunda Mulia University as an Informatics Engineering 
+                       (IT) student.</p>
+                    <p>I am a person who is very enthusiastic to always add insight. For this reason, 
+                       I often attend various trainings, such as training in programming languages such as Java, 
+                       Python, Javascript, HTML, and CSS. I also attended a computer training program at the HOPE 
+                       Computer Training Center when I was in high school.</p>
+                    <p>I also had an internship at the University where I attended. At that time, I was assigned 
+                       to the Library Division to help with Administration and design. Because I quite like design, 
+                       I often help in designing library content.</p>
+                    <p>Apart from pursuing my academic studies, I am also interested in organizational activities. 
+                       I am quite active in the IT Student Association and now I am an event organizer. I am assigned 
+                       to help coordinate the activities of the association organization.</p>
+                    <p>Apart from being organized, I also really like exploring new things. I'm always curious about 
+                       something new, feel a new atmosphere, and meet new people. For me, building relationships is 
+                       very important. Not surprisingly, my friends said I was a very sociable person.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------------------------------------- Section About Selesai ---------------------------------------------------------------->
+
+    <!----------------------------------------------------- Section Portofolio Dimulai ------------------------------------------------------------->
+    <section id="Portofolio" class="Portofolio">
+        <div class="container pt-5 mt-5 pb-5 text-center">
+            <div class="row mb-4">
+                <div class="col">
+                    <h2 class="pt-4">Portofolio</h2>
+                    <h5>Here are some designs that i have made during my work</h5>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="card">
+                        <img src="images/P1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Designing a quote from Hugh B.Brown</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="card">
+                        <img src="images/P2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Designing fun facts about Jules Verne</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="card">
+                        <img src="images/P3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Designing a quote from Confucius</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="card">
+                        <img src="images/P4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Designing the National Awakening Day</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="card">
+                        <img src="images/P5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Designing a quote from Martin Luther King</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="card">
+                        <img src="images/P6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Designing a quote from Mahatma Gandhi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="card">
+                        <img src="images/P7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Design typical book reader habits</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="card">
+                        <img src="images/P8.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Designing a quote from Samuel Jhonson</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="card">
+                        <img src="images/P9.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Designing a quote from Mason Cooley</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="card">
+                        <img src="images/P10.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Designing a quote from Unknown</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="card">
+                        <img src="images/P11.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Designing fun facts about libraries</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="card">
+                        <img src="images/P12.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Designing fun facts about books</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------------------------- Section Portofolio Selesai ------------------------------------------------------------->
+
+
+    <!----------------------------------------------------- Section Achievment Dimulai ------------------------------------------------------------->
+    <section id="Achievment">
+        <div class="container pt-5 pb-5 text-center">
+            <div class="row mb-4">
+                <div class="col">
+                    <h2 class="pt-4">Achievment</h2>
+                    <h5>Here are some of certificates that i got when i completed several training programs</h5>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md">
+                    <div class="card">
+                        <img src="images/S1.JPG" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Certificate starting programming in python from DICODING</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="card">
+                        <img src="images/S2.JPG" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Certificate HOPE computer training center</p>
+                        </div>
+                    </div>
+                </div>
+            </div>          
+        </div>
+    </section>
+    <!----------------------------------------------------- Section Achievment Selesai ------------------------------------------------------------->
+
+    <!------------------------------------------------------- Section Contact Dimulai -------------------------------------------------------------->
+    <section id="Contact">
+        <!----------------------------------------------------- contact dimulai ------------------------------------------------------------->
+            <div class="contact-section">
+                <div class="contact-info">
+                  <div>Address   : Villa Tangerang Regency 2 Blok AD-3 No. 28</div>
+                  <div>Email     : rivaldyvalentino100@gmail.com</div>
+                  <div>Phone     : 081294527373</div>
+                  <div><a class="text-decoration-none" href="https://github.com/Rivaldy20">Github</a></div>
+                  <div><a class="text-decoration-none" href="https://www.instagram.com/rivaldy.20/">Instagram</a></div>
+                  <div><a class="text-decoration-none" href="https://www.linkedin.com/in/rivaldy-valentino-9116b8203/">Linkedln</a></div>
+                </div>
+                <div class="contact-form">
+                  <h2>Contact Me</h2>
+                  <form class="contact" action="" method="post">
+                    <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+                    <input type="email" name="email" class="text-box" placeholder="Your Email" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <input type="submit" name="submit" class="send-btn" value="Send">
+                  </form>
+                </div>
+            </div>
+        <!----------------------------------------------------- contact selesai ------------------------------------------------------------->
+    </section>
+    <!------------------------------------------------------- Section Contact Selesai -------------------------------------------------------------->
+
+    <!------------------------------------------------------- Section Footer Dimulai -------------------------------------------------------------->
+    <footer>
+        <div class="container text-center py-3 mt-5">
+          <h5> Copyright &copy; 2021 |
+            <a class="text-decoration-none" href="#Home">Rivaldy Valentino</a>
+          </h5>
+        </div>
+      </footer>
+    <!------------------------------------------------------- Section Footer Selesai -------------------------------------------------------------->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  </body>
+</html>
